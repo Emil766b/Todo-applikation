@@ -1,0 +1,52 @@
+// Global styling 
+
+// Google Fonts
+@import url('https://fonts.googleapis.com/css?family=Lato:400,700|nunito:400,700');
+
+$Grey: #5c5c5c;
+$Blue: #185ea3;
+$Light-blue: #3b8ad9;
+
+$Light-grey: #8a8a8a;
+$Light: #d9d9d9;
+$Green: #32a852;
+
+//Update Bulmas global variables
+// Font family
+$family-sans-serif: "Nunito", sans-serif;
+// Primary color of the app
+$primary: $Blue;
+// Link color 
+$link: $Light-blue;
+
+// Update some of Bulmas component variables
+$control-border-width: 2px;
+$input-border-color: transparent;
+$input-shadow: none;
+
+// Set custom global styles
+// sets background to gradient from grey to light grey
+html {
+    background: linear-gradient(to right top, $Grey, $Light-grey);
+}
+
+html, body {
+    height: 100%;
+}
+
+.centered-content {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100%;
+}
+
+.modal-box {
+    min-height: 200px;
+    width: 100%;
+    max-width: 580px;
+    background: white;
+    border-radius: 5px;
+    padding: 35px;
+}

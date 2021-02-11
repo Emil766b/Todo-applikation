@@ -17,7 +17,7 @@ $family-sans-serif: "Nunito", sans-serif;
 // Primary color of the app
 $primary: $Blue;
 // Link color 
-$link: $Light-blue;
+$link: $Green;
 
 // Update some of Bulmas component variables
 $control-border-width: 2px;
@@ -49,4 +49,19 @@ html, body {
     background: white;
     border-radius: 5px;
     padding: 35px;
+}
+
+.title {
+    font-family: Lato;
+    font-size: 24px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+}
+
+.white-box {
+    padding: 35px;
+    background: white;
+    border-radius: 5px;
+    width: 350px;
+    max-width: 350px;
 }

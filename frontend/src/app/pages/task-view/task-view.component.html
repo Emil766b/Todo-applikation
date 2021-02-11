@@ -40,16 +40,26 @@
                         <a (click)="onDeleteListClick()" class="dropdown-item has-text-danger">
                           Delete
                         </a>
+                        <a (click)="onLogoutClick()" class="dropdown-item">
+                          Logout
+                        </a>
                       </div>
                       </div>
                     </div>
                   </div>
                 </div>
 
+                <div *ngIf="!tasks">
+                  <h3 class="empty-state-text">Select a list form the side</h3>
+                </div>
+
+                
+
             <div class="task" *ngFor="let task of tasks" (click)="onTaskClick(task)" [ngClass]="{ 'completed': task.completed }">
               <div class="task-text">
                 <p>{{task.title}}</p>
             </div>
+
             <div class="task-buttons">
               <button class="button" [routerLink]="['/lists', selectedListId, 'edit-task', task._id]">
                 <div class="icon">
@@ -65,10 +75,15 @@
             </div>
           </div>
 
+
+
             <button routerLink="./new-task" class="circle-add-button button is-primary">
                 <img src="../../../assets/plus-icon.svg">
             </button>
         </div>
+
+        
+
 
     </div>
 </div>
